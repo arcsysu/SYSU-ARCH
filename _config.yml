@@ -1,0 +1,32 @@
+remote_theme: just-the-docs/just-the-docs
+
+title: SYSU-ARCH 
+description: Welcome to SYSU-ARCH's homepage
+
+logo: "/assets/images/ARSYSU.png"
+
+callouts_level: quiet
+callouts:
+  highlight:
+    color: green
+  question:
+    title: Question
+    color: red
+  challenge:
+    title: Challenge
+    color: blue
+  outline:
+    color: yellow
+
+footer_content: "Supported by <a href=\"https://gty111.github.io\">TianYu GUO</a> and YuHao GU"
+
+color_scheme: light
+
+aux_links:
+  "Dark Mode":
+    - "//arcsysu.github.io/SYSU-ARCH-dark"
+
+nav_external_links:
+  - title: arcSYSu on github
+    url: https://github.com/arcsysu
+    hide_icon: false # set to true to hide the external link icon - defaults to false
