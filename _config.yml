@@ -30,6 +30,3 @@ nav_external_links:
   - title: arcSYSu on github
     url: https://github.com/arcsysu
     hide_icon: false # set to true to hide the external link icon - defaults to false
-
-last_edit_timestamp: true
-last_edit_time_format: "%b %e %Y at %I:%M %p"
