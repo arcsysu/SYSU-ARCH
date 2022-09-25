@@ -18,7 +18,7 @@ callouts:
   outline:
     color: yellow
 
-# footer_content: "Supported by <a href=\"https://gty111.github.io\">TianYu GUO</a> and YuHao GU"
+footer_content: "Supported by <a href=\"https://gty111.github.io\">TianYu GUO</a> and YuHao GU"
 
 color_scheme: light
 
@@ -30,3 +30,6 @@ nav_external_links:
   - title: arcSYSu on github
     url: https://github.com/arcsysu
     hide_icon: false # set to true to hide the external link icon - defaults to false
+
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
