@@ -34,3 +34,7 @@ All contents are subject to this LAB.
 - [![Disscussions](https://img.shields.io/github/discussions/arcsysu/SYSU-ARCH)](https://github.com/arcsysu/SYSU-ARCH/discussions)
 - [![Issue](https://img.shields.io/github/issues/arcsysu/SYSU-ARCH)](https://github.com/arcsysu/SYSU-ARCH/discussions)
 - contact `guoty9[AT]mail2.sysu.edu.cn`
+
+## 6. UnicodeDecodeError: 'ascii' codec can't decode ...
+
+Delete the Chinese comment and try again.
