@@ -32,3 +32,6 @@ nav_order: 3
 
 {: .question}
 > In each output, does `system.cpu.numCycles` times `system.clk_domain.clock` equals `simTicks` ? Why ?
+
+{: .challenge}
+> A single-cycle processor executes one instruction per clock cycle. A classic five-stage pipelined processor, on average, executes less than one instruction per clock cycle (due to branching). So why are processors on the market pipelined?
