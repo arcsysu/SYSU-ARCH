@@ -1,0 +1,14 @@
+name: test-github-actions
+on: [push]
+jobs: 
+  auto-syn:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          git config --global user.email "guoty9@mail2.sysu.edu.cn"
+          git config --global user.name "gtyinstinct"
+          git clone https://${GITHUB_TOKEN}@github.com/gty111/syn_light_dark.git
+          cd syn_light_dark
+          . syn_workflow.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GTY_TOKEN }}
