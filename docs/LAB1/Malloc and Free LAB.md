@@ -28,7 +28,7 @@ nav_order: 2
 ## Build and run template simobject
 
 {: .highlight}
-> You can find template code at [this](https://github.com/gty111/SYSU-ARCH-material/tree/main/LAB1)
+> You can find template code at [here](https://github.com/arcsysu/SYSU-ARCH/tree/latest/assets/LAB1)
 
 ![src](../../assets/images/malloc_free/src.png)
 
