@@ -18,13 +18,17 @@ nav_order: 2
 {: .outline}
 > At this part, you will create a simObject that focuses on "Malloc and Free" and add some functionalities for it.
 
+{: .challenge}
+> Note that Malloc and Free LAB is a challenge part
+
 ## Problem description
 
 ![malloc and free](../../assets/images/malloc_free/des.png))
 
 ## Build and run template simobject
 
-You can find template code at [this](https://github.com/gty111/SYSU-ARCH-material/tree/main/LAB1) .
+{: .highlight}
+> You can find template code at [this](https://github.com/gty111/SYSU-ARCH-material/tree/main/LAB1)
 
 ![src](../../assets/images/malloc_free/src.png)
 

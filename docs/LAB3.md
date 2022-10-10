@@ -48,7 +48,7 @@ You need to test your implementation by building a `benchmark` program and run i
 
 ## Submit
 
-- Your `benchmark` program to validate FSUBR in GEM5.
+- Your `benchmark` program to validate FSUBR in GEM5
 
 - Any files that you made changes to implement FSUBR
 

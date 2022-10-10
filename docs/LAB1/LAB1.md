@@ -5,7 +5,7 @@ nav_order: 3
 has_children: true
 ---
 
-# I Familiar with GEM5
+# I Familiar with gem5
 
 {: .outline}
 > At this part, you will learn installation and use of GEM5
