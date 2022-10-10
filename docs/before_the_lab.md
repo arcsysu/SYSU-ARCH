@@ -22,3 +22,22 @@ nav_order: 2
   - [![Disscussions](https://img.shields.io/github/discussions/arcsysu/SYSU-ARCH)](https://github.com/arcsysu/SYSU-ARCH/discussions)
   - [![Issue](https://img.shields.io/github/issues/arcsysu/SYSU-ARCH)](https://github.com/arcsysu/SYSU-ARCH/issues)
   - contact `guoty9[AT]mail2.sysu.edu.cn`
+
+## Schedule, Task and Submit
+
+### Schedule
+
+| Deadline | LAB     |
+| -------- | ------- |
+| 10.26    | I && II |
+| 11.9     | III     |
+| 11.23    | IV      |
+| 12.7     | V       |
+| 12.21    | VI      |
+
+### Task
+TODO
+
+### Submit
+
+To submit your work, please visit [EasyHPC](https://easyhpc.net/course/157)
