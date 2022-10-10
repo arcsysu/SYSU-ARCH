@@ -45,14 +45,16 @@ nav_order: 2
 
 ### Task and Score
 
-Generally speaking, for each LAB, the points of basic part is 90pts and the points of challenge part is 20pts.
-The final score is the average of each LAB's point times 0.4 which means full marks of experiment part is 40pts.  
+{: .highlight}
+> Generally speaking, for each LAB, the points of basic part is 90pts and the points of challenge part is 20pts.
+> The final score is the average of each LAB's point times 0.4 which means full marks of experiment part is 40pts.  
 
 The detailed task and scoring description are as follows.
 
-#### I Familiar with gem5
+### I Familiar with gem5
 
-##### Build and simulate 
+{: .highlight}
+> Build and simulate 
 
 - [20 points] Your config file (.py) 
 
@@ -69,13 +71,14 @@ The detailed task and scoring description are as follows.
 
 - [20 points] Answer question(challenge part) 
 
-##### Malloc and Free (challenge part)
+{: .highlight}
+> Malloc and Free (challenge part)
 
 - [10 points] Any files that you made changes to implement "Malloc and Free"
 
 - [10 points] The simulation output
 
-#### II Hostspot Analysis
+### II Hostspot Analysis
 
 - [40 points] Your solution to correctly compile modified DAXPY program
 
@@ -83,7 +86,7 @@ The detailed task and scoring description are as follows.
 
 - [10 points] Answer question
 
-#### III Implement FSUBR
+### III Implement FSUBR
 
 - [30 points] Your `benchmark` program to validate FSUBR in GEM5
 
@@ -91,7 +94,7 @@ The detailed task and scoring description are as follows.
 
 - [20 points] Answer question(challenge part)
 
-#### IV Implement NMRU replacement policy
+### IV Implement NMRU replacement policy
 
 - [70 points] Any file that you made changes to implement NMRU
 
@@ -99,7 +102,7 @@ The detailed task and scoring description are as follows.
 
 - [20 points] The detailed solution for challenge part
 
-#### V Explore GPGPU-SIM and GEMM
+### V Explore GPGPU-SIM and GEMM
 
 - [60 points] The output of simulating GEMM template code in GPGPU-SIM
 
@@ -107,7 +110,7 @@ The detailed task and scoring description are as follows.
 
 - [20 points] Tuning GEMM (challenge part)
 
-#### VI Expore ACCEL-SIM and Cache
+### VI Expore ACCEL-SIM and Cache
 
 - [40 points] The output (stats.csv)
 
@@ -116,6 +119,6 @@ The detailed task and scoring description are as follows.
 - [20 points] Answer question (challenge part)
 
 
-### Submit
+## Submit
 
 To submit your work, please visit [EasyHPC](https://easyhpc.net/course/157)
