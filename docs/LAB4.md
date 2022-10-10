@@ -25,7 +25,7 @@ Replace the cache block randomly but not the recently used cache block.
 
 You need to modify under dir `src/mem/cache/replacement_policies`.
 
-As `II.1` said, you need to observe how `LRU` is implemented in GEM5.
+As `III.1` said, you need to observe how `LRU` is implemented in GEM5.
 
 ## Compare NMRU and LRU in GEM5
 

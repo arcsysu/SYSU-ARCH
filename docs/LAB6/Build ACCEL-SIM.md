@@ -26,7 +26,7 @@ git clone -b dev https://github.com/accel-sim/accel-sim-framework.git
 ```
 
 {: .highlight}
-> How to launch the container with ACCEL-SIM? Try to figure out by reading [LABI](../LAB1/Build%20and%20simulate/Build%20GEM5.html)
+> How to launch the container with ACCEL-SIM? Try to figure out by reading LABI
 
 To build ACCEL-SIM 
 ```
