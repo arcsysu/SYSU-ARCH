@@ -46,9 +46,4 @@ You need to test your implementation by building a `benchmark` program and run i
 {: .challenge}
 > In x87.isa, you may notice that some code like `Inst::FSUB1(Ed)`, what is the meaning of the content in parentheses? How do you know that?
 
-## Submit
-
-- Your `benchmark` program to validate FSUBR in GEM5
-
-- Any files that you made changes to implement FSUBR
 

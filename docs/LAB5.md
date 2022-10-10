@@ -77,7 +77,3 @@ At this part of LAB, we provide a [GEMM template code](https://github.com/gty111
 {: .question}
 > What parameters do you think should be used to evaluate GEMM performance? Why?
 
-## Submit
-
-- The output of simulating GEMM template code in GPGPU-SIM
-

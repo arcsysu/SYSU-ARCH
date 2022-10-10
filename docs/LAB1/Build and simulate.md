@@ -103,16 +103,3 @@ Write a program that outputs one single integer at the end `the number of prime 
 
 {: .challenge}
 > A single-cycle processor executes one instruction per clock cycle. A classic five-stage pipelined processor, on average, executes less than one instruction per clock cycle (due to branching). So why are processors on the market pipelined?
-
-## Submit
-
-- Your config file (.py)
-
-- The output (include config) under the **combination** (total is 8) of these configs
-
-| CPU             | CPU_clock | DRAM          |
-| --------------- | --------- | ------------- |
-| X86TimingSimpleCPU | 1GHz      | DDR3_1600_x64 |
-| X86MinorCPU        | 2GHz      | DDR3_2133_x64 |
-
-- Your `sieve` program and corresponding `benchmark` program

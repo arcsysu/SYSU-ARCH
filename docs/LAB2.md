@@ -63,8 +63,3 @@ Run your modified DAXPY program in GEM5 and see what happens in the output.
 {: .question}
 > What is the difference in the output after you add `m5_dump_reset_stats(<arg1>,<arg2>)` ?
 
-## Submit
-
-- Your solution to correctly compile modified DAXPY program
-
-- The output after you add `m5_dump_reset_stats(arg1,arg2)`
