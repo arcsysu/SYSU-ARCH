@@ -1,0 +1,11 @@
+# 导入构建过程中的所有其它符号（固定写法）
+Import('*')
+
+# 声明要添加哪些 SimObject
+SimObject('MemAlloc.py', sim_objects=['MemAlloc', 'MemRequest'])
+
+# 添加 C++ 源文件
+Source('mem_alloc.cc')
+
+# 添加一个新的调试标志
+DebugFlag('MemAlloc', "Some discription for this MemAlloc debug flag")
