@@ -64,7 +64,7 @@ spack load <package name@package version>
 
 General Matrix Multiply (GEMM) is a common algorithm in linear algebra, machine learning, statistics, and many other domains.  It provides a more interesting trade-off space, as there are many ways to break up the computation. This includes using blocking, inner products, outer products, and systolic array techniques.
 
-At this part of LAB, we provide a [GEMM template code](https://github.com/arcsysu/SYSU-ARCH/tree/latest/assets/LAB5) of [CUDA](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html), your task is as follows:
+At this part of LAB, we provide a [GEMM template code](https://github.com/arcsysu/SYSU-ARCH/blob/latest/assets/LAB5/simpleGEMM_LAB.cu) of [CUDA](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html), your task is as follows:
 
 - simulate GEMM template code in GPGPU-SIM and find out the weakness of it
 

@@ -14,7 +14,7 @@ nav_order: 2
 {:toc}
 ---
 
-## **Import points need to mind**
+## **Important points need to mind**
 
 - **IMPORTANT:YOU NEED TO COMPLETE THIS LAB WITH GEM5 OF VERSION 22.0.0.2**
 
@@ -24,7 +24,7 @@ nav_order: 2
 
 - Label `challenge` means this part of content is a little difficult, you can skip it or do your best to solve it
 
-- You need write a report for each LAB. In your report, you should give proper introduction about your work including answering the questions or completing the challenge part and so on.
+- You need to write a report for each LAB. In your report, you should give proper introduction about your work including answering the questions or completing the challenge part and so on.
 
 - If you find/have some problems/tips about SYSU-ARCH, please 
   - [![Disscussions](https://img.shields.io/github/discussions/arcsysu/SYSU-ARCH)](https://github.com/arcsysu/SYSU-ARCH/discussions)
