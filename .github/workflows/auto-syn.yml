@@ -1,4 +1,4 @@
-name: test-github-actions
+name: auto-syn-light-dark
 on: [push]
 jobs: 
   auto-syn:

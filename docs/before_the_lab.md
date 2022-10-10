@@ -100,7 +100,7 @@ The detailed task and scoring description are as follows.
 
 - [20 points] The simulation output when using NMRU
 
-- [20 points] The detailed solution for challenge part
+- [20 points] The detailed solution (challenge part)
 
 ### V Explore GPGPU-SIM and GEMM
 
