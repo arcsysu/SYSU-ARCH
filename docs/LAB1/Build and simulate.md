@@ -24,21 +24,23 @@ You can choose **either** of three ways below.
 
 ### Setup on Ubuntu 20.04 (gem5 >= v21.0)
 
-{: .highlight}
-> sudo apt install build-essential git m4 scons zlib1g zlib1g-dev \
+```
+sudo apt install build-essential git m4 scons zlib1g zlib1g-dev \
     libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev \
     python3-dev python-is-python3 libboost-all-dev pkg-config
+```
 
 ### Setup on Ubuntu 18.04 (gem5 >= v21.0)
 
-{: .highlight}
-> sudo apt install build-essential git m4 scons zlib1g zlib1g-dev \
+```
+sudo apt install build-essential git m4 scons zlib1g zlib1g-dev \
     libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev \
     python3-dev python libboost-all-dev pkg-config
+```
 
 ### Using Docker
 
-#### Install Docker
+- Install Docker
 
 For windows, [install wsl](https://docs.microsoft.com/zh-cn/windows/wsl/install) first by using
 
@@ -54,7 +56,7 @@ then [download Docker Desktop for Windows](https://docs.docker.com/desktop/insta
 
 For other systems, reference [here](https://docs.docker.com/desktop/).
 
-#### Build gem5 with Docker
+- Build gem5 with Docker
 
 First,obtain gem5 image
 

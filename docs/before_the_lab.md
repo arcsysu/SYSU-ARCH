@@ -31,7 +31,7 @@ nav_order: 2
   - [![Issue](https://img.shields.io/github/issues/arcsysu/SYSU-ARCH)](https://github.com/arcsysu/SYSU-ARCH/issues)
   - contact `guoty9[AT]mail2.sysu.edu.cn` or `guyh9[AT]mail2.sysu.edu.cn`
 
-## **Schedule, Task, Score and Submit**
+## **Schedule, Task and Score**
 
 ### **Schedule**
 
