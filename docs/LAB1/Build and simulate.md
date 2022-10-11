@@ -96,7 +96,7 @@ git clone -b v22.0.0.2 https://github.com/gem5/gem5.git
 
 Within the root of the gem5 directory, gem5 can be built with SCons using:
 ```
-scons build/X86/gem5.opt -j
+scons build/X86/gem5.opt -j <cpu-nums>
 ```
 
 ## Write an insteresting app(sieve)

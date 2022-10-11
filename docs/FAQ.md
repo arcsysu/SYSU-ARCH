@@ -8,7 +8,13 @@ nav_order: 99
 
 ## 1. When building gem5, it says `You're missing the gem5 style or commit message hook...`
 
-then you can use
+then you can try
+
+```
+git config --global --add safe.directory <gem5 root dir>
+```
+
+or 
 
 ```
 chown -R <uid>:<gid> <gem5 directory>
