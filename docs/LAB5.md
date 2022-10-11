@@ -45,13 +45,19 @@ rm cuda_11.0.1_450.36.06_linux.run
 
 ### Using docker(accel-sim)
 
-to get docker image
+To get docker image
 ```
 docker pull accelsim/ubuntu-18.04_cuda-11
 ```
 
 ### Build
 
+To get GPGPU-SIM
+```
+git clone git@github.com:accel-sim/gpgpu-sim_distribution.git
+```
+
+To build
 ```
 # at <gpgpu-sim dir>
 make -j

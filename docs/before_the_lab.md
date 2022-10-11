@@ -118,6 +118,6 @@ The detailed task and scoring description are as follows.
 
 - [20 points] Answer question c (challenge part)
 
-## ****Submit**
+## **Submit**
 
 To submit your work, please visit [EasyHPC](https://easyhpc.net/course/157)

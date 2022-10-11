@@ -20,23 +20,25 @@ nav_order: 1
 
 ## [Build gem5(click me)](https://www.gem5.org/documentation/general_docs/building)
 
-Recommend using [Docker](https://www.docker.com/) or 
+You can choose **either** of three ways below.
 
-- Setup on Ubuntu 20.04 (gem5 >= v21.0)
+### Setup on Ubuntu 20.04 (gem5 >= v21.0)
 
 {: .highlight}
 > sudo apt install build-essential git m4 scons zlib1g zlib1g-dev \
     libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev \
     python3-dev python-is-python3 libboost-all-dev pkg-config
 
-- Setup on Ubuntu 18.04 (gem5 >= v21.0)
+### Setup on Ubuntu 18.04 (gem5 >= v21.0)
 
 {: .highlight}
 > sudo apt install build-essential git m4 scons zlib1g zlib1g-dev \
     libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev \
     python3-dev python libboost-all-dev pkg-config
 
-### Install Docker
+### Using Docker
+
+#### Install Docker
 
 For windows, [install wsl](https://docs.microsoft.com/zh-cn/windows/wsl/install) first by using
 
@@ -52,7 +54,7 @@ then [download Docker Desktop for Windows](https://docs.docker.com/desktop/insta
 
 For other systems, reference [here](https://docs.docker.com/desktop/).
 
-### Build gem5 with Docker
+#### Build gem5 with Docker
 
 First,obtain gem5 image
 
@@ -82,6 +84,18 @@ docker exec -it <container> /bin/bash
 
 {: .highlight}
 > using `docker ps` to get info about `<container>`
+
+### Build
+
+To get gem5
+```
+git clone -b v22.0.0.2 https://github.com/gem5/gem5.git
+```
+
+Within the root of the gem5 directory, gem5 can be built with SCons using:
+```
+scons build/X86/gem5.opt -j
+```
 
 ## Write an insteresting app(sieve)
 
