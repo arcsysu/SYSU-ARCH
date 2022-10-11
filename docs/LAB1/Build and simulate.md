@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Build and simulate
-parent: I.Familiar with GEM5
+parent: I.Familiar with gem5
 nav_order: 1
 ---
 
@@ -16,11 +16,25 @@ nav_order: 1
 ---
 
 {: .outline}
-> At this part, you will learn installation and simulation of GEM5
+> At this part, you will learn installation and simulation of gem5
 
-## [Build GEM5(click me)](https://www.gem5.org/documentation/general_docs/building)
+## [Build gem5(click me)](https://www.gem5.org/documentation/general_docs/building)
 
-Recommend using [Docker](https://www.docker.com/)
+Recommend using [Docker](https://www.docker.com/) or 
+
+- Setup on Ubuntu 20.04 (gem5 >= v21.0)
+
+{: .highlight}
+> sudo apt install build-essential git m4 scons zlib1g zlib1g-dev \
+    libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev \
+    python3-dev python-is-python3 libboost-all-dev pkg-config
+
+- Setup on Ubuntu 18.04 (gem5 >= v21.0)
+
+{: .highlight}
+> sudo apt install build-essential git m4 scons zlib1g zlib1g-dev \
+    libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev \
+    python3-dev python libboost-all-dev pkg-config
 
 ### Install Docker
 
@@ -34,14 +48,13 @@ then [download Docker Desktop for Windows](https://docs.docker.com/desktop/insta
 
 {: .highlight}
 > `wsl` is windows subsystem for linux. You can do most of the things you can do on Linux on WSL.
-> 
 > To integrate docker with wsl through `setting=>Resources=>WSL Integration`
 
-For other systems, reference [this](https://docs.docker.com/desktop/).
+For other systems, reference [here](https://docs.docker.com/desktop/).
 
-### Build GEM5 with Docker
+### Build gem5 with Docker
 
-First,obtain GEM5 image
+First,obtain gem5 image
 
 ```
 docker pull gcr.io/gem5-test/ubuntu-20.04_all-dependencies:v22-0
@@ -74,14 +87,14 @@ docker exec -it <container> /bin/bash
 
 Write a program that outputs one single integer at the end `the number of prime numbers <= N`(at default N = 100,000,000) . Compile your program as a static binary. Note that your program must achieve O(N) complexity.
 
-## Use GEM5
-- to simulate the program in GEM5, these tutorials may be helpful
+## Use gem5
+- to simulate the program in gem5, these tutorials may be helpful
 
   - [create a simple configuration script](https://www.gem5.org/documentation/learning_gem5/part1/simple_config/)
 
   - [using the default configuration scripts](https://www.gem5.org/documentation/learning_gem5/part1/example_configs/)
 
-- Run your sieve program in GEM5
+- Run your sieve program in gem5
   
   - choose an appropriate input size
   
@@ -91,7 +104,7 @@ Write a program that outputs one single integer at the end `the number of prime 
   - change the CPU model from X86TimingSimpleCPU to X86MinorCPU.
   
   > {: .highlight}
-  > GEM5 won't compile MinorCPU by default. You need to add some modifications. GEM5 use `CPU_MODELS` as a parameter in the past. Try to search the keyword `CPU_MODELS` and see what you can find out. 
+  > gem5 won't compile MinorCPU by default. You need to add some modifications. gem5 use `CPU_MODELS` as a parameter in the past. Try to search the keyword `CPU_MODELS` and see what you can find out. 
   > If you search `CPU_MODELS` and you will see it in release-note.md. It tells that you should modify under `arch` dir. To simplify the exp, we give the hint that you should modify `src/arch/x86/X86CPU.py` .
   
   - Vary the CPU clock from 1GHz to 2GHz (in steps of 1GHz) with both CPU models.
@@ -99,7 +112,7 @@ Write a program that outputs one single integer at the end `the number of prime 
   - Change the memory configuration from DDR3_1600_x64 to DDR3_2133_x64 (DDR3 with a faster clock)
 
 {: .question}
-> In each output, does `system.cpu.numCycles` times `system.clk_domain.clock` equals `simTicks` ? Why ?
+> a. In each output, does `system.cpu.numCycles` times `system.clk_domain.clock` equals `simTicks` ? Why ?
 
 {: .challenge}
-> A single-cycle processor executes one instruction per clock cycle. A classic five-stage pipelined processor, on average, executes less than one instruction per clock cycle (due to branching). So why are processors on the market pipelined?
+> b. A single-cycle processor executes one instruction per clock cycle. A classic five-stage pipelined processor, on average, executes less than one instruction per clock cycle (due to branching). So why are processors on the market pipelined?

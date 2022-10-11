@@ -7,7 +7,21 @@ nav_order: 1
 
 # [Build ACCEL-SIM](https://github.com/accel-sim/accel-sim-framework)
 
-Recommend using Docker
+You can choose **either** of two ways below.
+
+## Setup on Ubuntu 18.04
+
+```
+sudo apt-get install  -y wget build-essential xutils-dev bison zlib1g-dev flex \
+      libglu1-mesa-dev git g++ libssl-dev libxml2-dev libboost-all-dev git g++ \
+      libxml2-dev vim python-setuptools python-dev build-essential python-pip
+pip3 install pyyaml plotly psutil
+wget http://developer.download.nvidia.com/compute/cuda/11.0.1/local_installers/cuda_11.0.1_450.36.06_linux.run
+sh cuda_11.0.1_450.36.06_linux.run --silent --toolkit
+rm cuda_11.0.1_450.36.06_linux.run
+```
+
+## Using Docker 
 
 {: .highlight}
 > You may wonder why we(I) recommend using Docker. 
@@ -33,6 +47,7 @@ To build ACCEL-SIM
 # in Docker, <CUDA_DIR>=/usr/local/cuda-11.0
 export CUDA_INSTALL_PATH=<CUDA_DIR>
 export PATH=$CUDA_INSTALL_PATH/bin:$PATH
+pip3 install -r requirements.txt # in docker we can skip
 source ./gpu-simulator/setup_environment.sh
 make -j -C ./gpu-simulator/
 ```

@@ -58,7 +58,7 @@ The main difference between `GTX480` and `GTX480S` is that at `GTX480` L1 cache 
 at `GTX480S` L1 cache is sector.
 
 {: .question}
-> What is sector cache?
+> a. What is sector cache?
 
 ACCEL-SIM provide predefined output colleciton configs,we want to generate output for 
 `L2_total_cache_accesses` and `L1D_total_cache_miss_rate`.

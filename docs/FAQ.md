@@ -6,7 +6,7 @@ nav_order: 99
 
 # FAQ
 
-## 1. When building GEM5, it says `You're missing the gem5 style or commit message hook...`
+## 1. When building gem5, it says `You're missing the gem5 style or commit message hook...`
 
 then you can use
 
@@ -19,9 +19,9 @@ chown -R <uid>:<gid> <gem5 directory>
 
 ## 2. When using MinorCPU, it says `AttributeError: object 'BaseMinorCPU' has no attribute 'ArchMMU'`
 
-That means you didn't compile MinorCPU in your GEM5. Try to figure out by reading `Hint`.
+That means you didn't compile MinorCPU in your gem5. Try to figure out by reading `Hint`.
 
-## 3. I found this LAB is different from GEM5 101. Which should I reference?
+## 3. I found this LAB is different from gem5 101. Which should I reference?
 
 All contents are subject to this LAB.
 
@@ -29,7 +29,7 @@ All contents are subject to this LAB.
 
 - [![Disscussions](https://img.shields.io/github/discussions/arcsysu/SYSU-ARCH)](https://github.com/arcsysu/SYSU-ARCH/discussions)
 - [![Issue](https://img.shields.io/github/issues/arcsysu/SYSU-ARCH)](https://github.com/arcsysu/SYSU-ARCH/discussions)
-- contact `guoty9[AT]mail2.sysu.edu.cn`
+- contact `guoty9[AT]mail2.sysu.edu.cn` or `guyh9[AT]mail2.sysu.edu.cn`
 
 ## 5. UnicodeDecodeError: 'ascii' codec can't decode ...
 

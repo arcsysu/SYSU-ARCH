@@ -31,8 +31,8 @@ to generate output
 Try to take a look at the `stats.csv` and focus on `L2_total_cache_accesses` `L1D_total_cache_miss_rate` `gpu_tot_ipc` .
 
 {: .question}
-> What can you find from stats.csv?
+> b. What can you find from stats.csv?
 > Why does BFS and NN vary differently on `gpu_tot_ipc`? Can you provide a detailed explanation?
 
 {: .challenge}
-> Can you explain why we make those changes at `gpgpusim.config` if we want to change the L1 cache to sector?
+> c. Can you explain why we make those changes at `gpgpusim.config` if we want to change the L1 cache to sector?

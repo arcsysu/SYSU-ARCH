@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Malloc and Free LAB
-parent: I.Familiar with GEM5
+parent: I.Familiar with gem5
 nav_order: 2
 ---
 

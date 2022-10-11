@@ -19,46 +19,68 @@ nav_order: 7
 
 ![GPGPU-SIM](../assets/images/gpgpu-sim.png)
 
-GPGPU-SIM is a simulator for CUDA program. GPGPU-SIM is a little outdated from GEM5. But it is still acknowledged by academic field.
+GPGPU-SIM is a simulator for CUDA program. GPGPU-SIM is a little outdated from gem5. But it is still acknowledged by academic field.
 
-## Build [GPGPU-SIM](http://www.gpgpu-sim.org/)
+## Links about GPGPU-SIM
 
-### Build GPGPU-SIM by docker
+- [homepage](http://www.gpgpu-sim.org/)
+- [github](https://github.com/accel-sim/gpgpu-sim_distribution)
+- [mannual](http://gpgpu-sim.org/manual/index.php/Main_Page)
 
-Due to the complexity of building GPGPU-SIM, we provide a docker image that you can use dircetly. The image include prebuilt GPGPU-SIM by spack. 
-```
-docker pull gtyinstinct/gpgpu-sim:spack
-```
+## Build GPGPU-SIM
 
-### Usage of the docker image
+You can choose **either** of two ways below to prepare environment for building.
 
-- to activate spack env
-
-```
-. /opt/spack/share/spack/setup-env.sh
-```
-
-- to find installed package
+### Setup on Ubuntu 18.04
 
 ```
-spack find 
+sudo apt-get install  -y wget build-essential xutils-dev bison zlib1g-dev flex \
+      libglu1-mesa-dev git g++ libssl-dev libxml2-dev libboost-all-dev git g++ \
+      libxml2-dev vim python-setuptools python-dev build-essential python-pip
+pip3 install pyyaml plotly psutil
+wget http://developer.download.nvidia.com/compute/cuda/11.0.1/local_installers/cuda_11.0.1_450.36.06_linux.run
+sh cuda_11.0.1_450.36.06_linux.run --silent --toolkit
+rm cuda_11.0.1_450.36.06_linux.run
 ```
 
-- to load installed package
+### Using docker(accel-sim)
+
+to get docker image
+```
+docker pull accelsim/ubuntu-18.04_cuda-11
+```
+
+### Build
 
 ```
-spack load <package name@package version>
+# at <gpgpu-sim dir>
+make -j
 ```
+
+## Use GPGPU-SIM
+
+The following steps are all necessary.
+
+### Comile CUDA source file
 
 {: .highlight}
-> If you feel the image is too big(about 3GB), you can [build it on your own](https://github.com/gty111/sysu-scc-spack-repo)
+> you should add `-lcudart` flag when you use nvcc to compile
 
-## Tips about GPGPU-SIM 
+```
+nvcc -lcudart <source-file> -o <binary-file>
+```
 
-- You may find these helpful
-  - [official manual](http://gpgpu-sim.org/manual/index.php/Main_Page)
-  - [install GPGPU-SIM](https://github.com/wu-kan/wu-kan.github.io/blob/a94869ef1f1f6bf5daf9535cacbfc69912c2322b/_posts/2022-01-27-%E6%A8%A1%E6%8B%9F%E5%99%A8%20GPGPU-Sim%20%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D.md)
-  - [use GPGPU-SIM](https://github.com/gty111/SimpleUseGpgpuSim)
+### Set up environment
+
+```
+# at <gpgpu-sim dir>
+. setup_environment
+```
+
+### Copy config and just run
+
+First, choose a config you like from `<gpgpu-sim dir>`/configs/tested-cfgs.
+Copy all the files under `<gpgpu-sim dir>`/configs/tested-cfgs/`<selected configs>` to the path where the binary file lies.Then go to the path where the binary file lies and just run it.
 
 ## GEMM
 
@@ -75,5 +97,5 @@ At this part of LAB, we provide a [GEMM template code](https://github.com/arcsys
 > `Hint` you can simulate the modified code in GPGPU-SIM to validate the improvement of performance.
 
 {: .question}
-> What parameters do you think should be used to evaluate GEMM performance? Why?
+> a. What parameters do you think should be used to evaluate GEMM performance? Why? (Try to look through the simulation output)
 

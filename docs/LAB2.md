@@ -15,7 +15,7 @@ nav_order: 4
 ---
 
 {: .outline}
-> At this part, you will learn how to reset the output status in GEM5.
+> At this part, you will learn how to reset the output status in gem5.
 
 The DAXPY loop (double precision aX + Y) is an oft used operation in programs that work with matrices and vectors. The following code implements DAXPY in C++11.
 
@@ -58,8 +58,8 @@ You will add `m5_dump_reset_stats(<arg1>,<arg2>)` to the C++ code to reset stats
 
 To use `m5_dump_reset_stats(<arg1>,<arg2>)`, you need to read the `util/m5/README.md` and correctly compile DAXPY program.
 
-Run your modified DAXPY program in GEM5 and see what happens in the output.
+Run your modified DAXPY program in gem5 and see what happens in the output.
 
 {: .question}
-> What is the difference in the output after you add `m5_dump_reset_stats(<arg1>,<arg2>)` ?
+> a. What is the difference in the output after you add `m5_dump_reset_stats(<arg1>,<arg2>)` ?
 
