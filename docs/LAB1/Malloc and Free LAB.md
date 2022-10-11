@@ -23,7 +23,7 @@ nav_order: 2
 
 ## Problem description
 
-![malloc and free](../../assets/images/malloc_free/des.png))
+![malloc and free](../../assets/images/malloc_free/des.png)
 
 ## Build and run template simobject
 
