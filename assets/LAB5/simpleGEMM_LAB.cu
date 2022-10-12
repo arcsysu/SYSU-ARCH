@@ -48,7 +48,8 @@ check(int *C_cpu,int *C_gpu){
     for(int i=0;i<M;i++){
         for(int j=0;j<N;j++){
             if(C_cpu[i*N + j] != C_gpu[i*N + j]){
-                printf("at (%d,%d) expect %d but got %d\n",i,j,C_cpu,C_gpu);
+                printf("at (%d,%d) expect %d but got %d\n",
+                  i,j,C_cpu[i*N + j],C_gpu[i*N + j]);
                 return 0;
             }
         }
@@ -163,4 +164,14 @@ main(){
     }else{
         printf("check fail\n");
     }
+
+    // free memory on CPU
+    free(A_h);
+    free(B_h);
+    free(C_h);
+
+    // free memory on GPU
+    cudaFree(A_d);
+    cudaFree(B_d);
+    cudaFree(C_d);
 }
