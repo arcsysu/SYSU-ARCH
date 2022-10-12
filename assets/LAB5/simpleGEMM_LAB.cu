@@ -77,7 +77,8 @@ initVal(int *arr,size_t size){
     }
 }
 
-void Timer(const char *tag, const std::function<void()> &kernel,
+void 
+Timer(const char *tag, const std::function<void()> &kernel,
             int test_time=1) {
   for (int i = 0; i < test_time; ++i) {
     cudaEvent_t beg, end;
