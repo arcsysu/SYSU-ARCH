@@ -65,7 +65,7 @@ The detailed task and scoring description are as follows.
 | X86TimingSimpleCPU | 1GHz      | DDR3_1600_x64 |
 | X86MinorCPU        | 2GHz      | DDR3_2133_x64 |
 
-- [20 points] Your `sieve` program and corresponding `benchmark` program
+- [20 points] Your `sieve` program
 
 - [20 points] Answer question a
 
