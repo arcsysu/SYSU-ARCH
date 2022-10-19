@@ -120,7 +120,7 @@ Write a program that outputs one single integer at the end `the number of prime 
   - change the CPU model from X86TimingSimpleCPU to X86MinorCPU.
   
   > {: .highlight}
-  > gem5 won't compile MinorCPU by default. You need to add some modifications. gem5 use `CPU_MODELS` as a parameter in the past. Try to search the keyword `CPU_MODELS` and see what you can find out. 
+  > gem5 won't compile X86MinorCPU by default. You need to add some modifications. gem5 use `CPU_MODELS` as a parameter in the past. Try to search the keyword `CPU_MODELS` and see what you can find out. 
   > If you search `CPU_MODELS` and you will see it in release-note.md. It tells that you should modify under `arch` dir. To simplify the exp, we give the hint that you should modify `src/arch/x86/X86CPU.py` .
   
   - Vary the CPU clock from 1GHz to 2GHz (in steps of 1GHz) with both CPU models.
