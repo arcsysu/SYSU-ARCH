@@ -21,6 +21,13 @@ nav_order: 2
 {: .challenge}
 > Note that Malloc and Free LAB is a challenge part
 
+{: .highlight}
+> When to rebuild gem5 ?
+> 
+> gem5 has config files like `.py` . Some config files will influence gem5 binary(ELF file). 
+> Some config files just influence gem5 runtime behavior. You need to distinguish that by yourself.
+> For example, if you add some new features to gem5, rebuilding gem5 is obivous.
+
 ## Problem description
 
 ![malloc and free](../../assets/images/malloc_free/des.png)
