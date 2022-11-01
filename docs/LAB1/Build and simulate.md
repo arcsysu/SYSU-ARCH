@@ -125,7 +125,7 @@ Write a program that outputs one single integer at the end `the number of prime 
   
   - Vary the CPU clock from 1GHz to 2GHz (in steps of 1GHz) with both CPU models.
   
-  - Change the memory configuration from DDR3_1600_x64 to DDR3_2133_x64 (DDR3 with a faster clock)
+  - Change the memory configuration from DDR3_1600_8x8 to DDR3_2133_8x8 (DDR3 with a faster clock)
 
 {: .question}
 > a. In each output, does `system.cpu.numCycles` times `system.clk_domain.clock` equals `simTicks` ? Why ?
