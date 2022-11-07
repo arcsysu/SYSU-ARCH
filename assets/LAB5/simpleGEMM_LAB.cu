@@ -48,7 +48,8 @@ check(int *C_cpu,int *C_gpu){
     for(int i=0;i<M;i++){
         for(int j=0;j<N;j++){
             if(C_cpu[i*N + j] != C_gpu[i*N + j]){
-                printf("at (%d,%d) expect %d but got %d\n",i,j,C_cpu,C_gpu);
+                printf("at (%d,%d) expect %d but got %d\n",
+                  i,j,C_cpu[i*N + j],C_gpu[i*N + j]);
                 return 0;
             }
         }
@@ -76,7 +77,8 @@ initVal(int *arr,size_t size){
     }
 }
 
-void Timer(const char *tag, const std::function<void()> &kernel,
+void 
+Timer(const char *tag, const std::function<void()> &kernel,
             int test_time=1) {
   for (int i = 0; i < test_time; ++i) {
     cudaEvent_t beg, end;
@@ -163,4 +165,14 @@ main(){
     }else{
         printf("check fail\n");
     }
+
+    // free memory on CPU
+    free(A_h);
+    free(B_h);
+    free(C_h);
+
+    // free memory on GPU
+    cudaFree(A_d);
+    cudaFree(B_d);
+    cudaFree(C_d);
 }

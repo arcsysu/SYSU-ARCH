@@ -23,6 +23,12 @@ After finishing SYSU-ARCH, you will learn
 {: .highlight}
 > reference [gem5 101](https://www.gem5.org/documentation/learning_gem5/gem5_101/)(add **changes** to fit current version of gem5 and new ideas)
 
+## Related materials
+
+- [simulator(ppt)](assets/ppt/simulator.pptx)
+
+- [gem5 quick start(ppt)](assets/ppt/gem5快速上手.pptx)
+
 ## Related LABs
 
 - [YSYX](https://ysyx.oscc.cc/)
