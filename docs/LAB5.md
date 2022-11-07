@@ -60,6 +60,7 @@ git clone git@github.com:accel-sim/gpgpu-sim_distribution.git
 To build
 ```
 # at <gpgpu-sim dir>
+source setup_environment
 make -j
 ```
 
