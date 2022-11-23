@@ -1,10 +1,10 @@
 ---
 layout: default
-title: IV.Implement NMRU replacement policy
+title: IV.Implement NMRU cache replacement policy
 nav_order: 6
 ---
 
-# IV Implement NMRU replacement policy
+# IV Implement NMRU cache replacement policy
 {: .no_toc }
 
 ## Table of contents
@@ -15,22 +15,27 @@ nav_order: 6
 ---
 
 {: .outline}
-> At this part, you will learn to implement a cache replacement policy in gem5
+> At this part, you are required to implement a new cache replacement policy NMRU (Not Most Recently Used) in gem5.
 
-## NMRU
+## What's NMRU policy ?
 
-Replace the cache block randomly but not the recently used cache block.
+The NMRU policy is just slightly different from the LRU (Least Recently Used) policy. In fact, you can complete this task with only a few line changes on the original LRU source code in gem5.
+
+Just as you learned in class, the LRU policy uses a queue to track the usage of cache block by moving the last accessed block to the head of the queue. When a miss happens and a replacement must be done, the last block in the queue will be dropped to accommodate the newly accessed block.
+
+The NMRU differs from LRU only in the choice of the block to be replaced. In NMRU, instead of always dropping the last block in the queue, we randomly choose a block after the first one in the queue. That is, we want to keep the most recently used block.
+
+See, very simple, right?
 
 ## Tips About Implementing NMRU
 
-You need to modify under dir `src/mem/cache/replacement_policies`.
+Turn to the directory `src/mem/cache/replacement_policies` in gem5 source code repository.
 
-As `III.1` said, you need to observe how `LRU` is implemented in gem5.
+You need to observe how `LRU` is implemented in gem5. To be more precise, refer to two files: `lru_rp.hh` and `lru_rp.cc`.
 
 ## Compare NMRU and LRU in gem5
 
 Run your `sieve` program in gem5 using NMRU or LRU and see what is the difference in the output.
 
 {: .challenge}
-> Can you write a program that runs faster (about 10% speedup) using `<RP1>` instead of `<RP2>` in gem5? (`<RP1>` and `<RP2>` represent different replacement policy in gem5) `challenge`
-
+> Write a program that has significant performance gap (approx. 10% speedup) between two different cache policies of gem5 (not only NMRU and LRU). You should detail your program, policies you chose and the output statistics in your report.
