@@ -37,5 +37,10 @@ You need to observe how `LRU` is implemented in gem5. To be more precise, refer 
 
 Run your `sieve` program in gem5 using NMRU or LRU and see what is the difference in the output.
 
+These two articles can help you understand how to use the cache objects in gem5:
+
+- https://www.gem5.org/documentation/general_docs/memory_system/
+- https://www.gem5.org/documentation/learning_gem5/part1/cache_config/
+
 {: .challenge}
 > Write a program that has significant performance gap (approx. 10% speedup) between any two different cache policies of gem5 (not limited to NMRU and LRU). You should detail your program, policies you chose and the output statistics in your report.
