@@ -20,13 +20,21 @@ export CUDA_INSTALL_PATH=<CUDA_DIR>
 export PATH=$CUDA_INSTALL_PATH/bin:$PATH
 source ./src/setup_environment
 make ispass-2009 -i -j -C ./src
-make data -C ./src
 ```
 
 To test the build
 ```
 ls bin/<cuda-version>/release
 ```
+If you find `ispass-2009-BFS` and `ispass-2009-NN` in the output , then the app is built successfully.
 
-{: .highlight}
-> If you find `ispass-2009-BFS` and `ispass-2009-NN` in the output , then congratulate you build successfully.
+We provide data at [here](https://github.com/arcsysu/SYSU-ARCH/tree/latest/assets/LAB6)
+```
+cp -r data_dirs <gpu-app-collection>
+```
+To test the data
+```
+# at <gpu-app-collection>
+ls data_dirs/cuda/ispass-2009
+```
+If you find `ispass-2009-BFS` and `ispass-2009-NN` in the output , then the data is prepared successfully.
