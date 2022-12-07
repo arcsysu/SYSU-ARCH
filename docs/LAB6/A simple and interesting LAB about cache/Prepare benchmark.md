@@ -28,10 +28,8 @@ ls bin/<cuda-version>/release
 ```
 If you find `ispass-2009-BFS` and `ispass-2009-NN` in the output , then the app is built successfully.
 
-We provide data at [here](https://github.com/arcsysu/SYSU-ARCH/tree/latest/assets/LAB6)
-```
-cp -r data_dirs <gpu-app-collection>
-```
+We provide data at [here](https://github.com/arcsysu/SYSU-ARCH/tree/latest/assets/LAB6).
+You need to place `<data_dirs>` under `<gpu-app-collection>`.
 To test the data
 ```
 # at <gpu-app-collection>
